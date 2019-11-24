@@ -1,11 +1,16 @@
 <template>
   <div id="app">
+    <Minesweeper />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'app'
+  name: 'app',
+
+  components: {
+    Minesweeper: () => import("@/components/Minesweeper")
+  }
 }
 </script>
 
